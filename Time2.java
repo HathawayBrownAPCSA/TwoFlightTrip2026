@@ -15,7 +15,7 @@ public class Time2
 
     public Time2 elapsed(Time2 other)
     {
-        elapsedMins = other.totalMins - this.totalMins;
+        int elapsedMins = other.totalMins - this.totalMins;
         int hrs = elapsedMins / 60;
         int mins = elapsedMins % 60;
         return new Time2 (hrs, mins);

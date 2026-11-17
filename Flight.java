@@ -9,17 +9,17 @@ public class Flight
     // instance variables
     private String airline;
     private int flightNum;
-    private Time depTime;
+    private Time2 depTime;
     private String depCity;
-    private Time arrTime;
+    private Time2 arrTime;
     private String arrCity;
     
 
     /**
      * Constructor for objects of class flight
      */
-    public Flight(String airlineName, int flightNumber, Time departureTime, String departCity,
-        Time arriveTime, String arriveCity)
+    public Flight(String airlineName, int flightNumber, Time2 departureTime, String departCity,
+        Time2 arriveTime, String arriveCity)
     {
         // initialise instance variables
         airline = airlineName;
@@ -32,16 +32,16 @@ public class Flight
     //-------------------------------------------------------
     // Accessor Methods  "Getters"
     //-------------------------------------------------------
-    public Time getArrTime()   { return arrTime;  }
-    public Time getDepTime()  { return depTime;  }
+    public Time2 getArrTime()   { return arrTime;  }
+    public Time2 getDepTime()  { return depTime;  }
     /**
      * Returns a String representing the flight info
      */
     public String toString()
     {
-        Time duration = depTime.elapsed(arrTime);
-        return airline + flightNum + " will be departing at " + depTime + " from " + depCity + 
-        ". The flight will be arriving at " + arrCity + " at " + arrTime + 
-        ". The total duration of the flight will be " + duration + ".";
+        Time2 duration = depTime.elapsed(arrTime);
+        return airline + " " + flightNum + " will be departing at " + depTime + " from " + depCity + 
+        ".\n The flight will be arriving at " + arrCity + " at " + arrTime + 
+        ".\n The total duration of the flight will be " + duration + ".";
     }
 }

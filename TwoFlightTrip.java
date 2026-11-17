@@ -11,7 +11,7 @@ public class TwoFlightTrip
 {
     private Flight f1;
     private Flight f2;
-    private Time layover;
+    private Time2 layover;
     
     public TwoFlightTrip(Flight flt1, Flight flt2)
     {
@@ -24,8 +24,10 @@ public class TwoFlightTrip
     {
         String result = f1.toString();
         
-        result += "/n   layover  " + layover.toString() + "\n";
+        result += "\n\n   layover  " + layover.toString() + "\n\n";
         
         result += f2.toString();
+        
+        return result;
     }
 }

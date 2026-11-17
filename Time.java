@@ -26,7 +26,7 @@ public class Time
     
     /**
      */
-    public String toString(int h, int m)
+    public String toString()
     {
         String minsText  = mins + "";
         if (minsText.length() == 2){
