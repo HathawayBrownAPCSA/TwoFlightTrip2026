@@ -23,7 +23,7 @@ public class TwoFlightTrip
     {
         String result = f1.toString();
         
-        result += "/n   layover" + layover.toString();
+        result += "/n   layover  " + layover.toString() + "\n";
         
         result += f2.toString();
     }
