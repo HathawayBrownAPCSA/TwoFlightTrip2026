@@ -13,6 +13,17 @@ public class Time
         mins = m;
     }
 
+    public Time elapsed (Time other)
+    {
+        int elapHrs = other.hours - this.hours;
+        int elapMins = other.mins - this.mins;
+        if (elapMins < 0) {
+            elapMins += 60;
+            elapHrs--;
+        }
+        return new Time (elapHrs, elapMins);
+    }
+    
     /**
      */
     public String toString(int h, int m)
