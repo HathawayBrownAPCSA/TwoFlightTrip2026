@@ -17,6 +17,7 @@ public class TwoFlightTrip
     {
         f1 = flt1;
         f2 = flt2;
+        layover = f1.getArrTime().elapsed(f2.getDepTime());
     }
     
     public String toString()
