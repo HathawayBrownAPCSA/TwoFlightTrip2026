@@ -12,6 +12,14 @@ public class Time2
     public Time2(int hours, int mins){
         totalMins = hours*60 + mins;
     }
+
+    public Time elapsed(Time other)
+    {
+        elapsedMins = other.totalMins - this.totalMins;
+        int hrs = elapsedMins / 60;
+        int mins = elapsedMins % 60;
+        return new Time (hrs, mins);
+    }
     
     public String toString(){
         int hours = totalMins/60;
