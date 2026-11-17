@@ -13,12 +13,12 @@ public class Time2
         totalMins = hours*60 + mins;
     }
 
-    public Time elapsed(Time other)
+    public Time2 elapsed(Time2 other)
     {
         elapsedMins = other.totalMins - this.totalMins;
         int hrs = elapsedMins / 60;
         int mins = elapsedMins % 60;
-        return new Time (hrs, mins);
+        return new Time2 (hrs, mins);
     }
     
     public String toString(){
