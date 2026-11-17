@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class Time2 here.
+ * Find total minutes of the flights
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Vidhi and Laiha
+ * @version 11/17/26
  */
 public class Time2
 {
